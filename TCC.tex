@@ -1,0 +1,237 @@
+% Projeto de Conclusão de Curso
+% Aluno: xpto
+%----------------------------
+\documentclass[
+	12pt,	
+    oneside,
+    a4paper,
+    brazil  
+]{abntex2}
+
+% ----------------------------
+% Pacotes para acentuação
+% ----------------------------
+    \usepackage[T1]{fontenc}
+    \usepackage{lmodern}
+    \usepackage{sty/sbc-template}
+    \usepackage[utf8]{inputenc}
+    \usepackage{adjustbox}    % Escala/resize
+    \usepackage{longtable}    % Multi-página
+    \usepackage{rotating}     % Paisagem
+    \usepackage{booktabs}
+
+%--------------------------------------------
+% Variáveis para preencher com os seus dados
+%--------------------------------------------
+    \title{Lógica computacional como estrutura intermediária para tradução entre representações}
+    \subtitle{Uma proposta para tradução bidirecional entre código e blueprints visuais}
+    \author{Anna Beatriz Resende Oki Corrêa}
+    \cidade{Brasília}
+    \ano{2026}
+    \coordenacao{Coordenação do Curso de Sistema de Informações}
+    \titulacao{ Sistema de Informações}
+    \orientador{Prof. Dr. Xxxx}
+%--------------------------------------------
+
+
+\renewcommand{\listfigurename}{}
+\begin{document} 
+\pagestyle{empty}
+\maketitle
+\newpage
+
+
+% -------------------------------
+% Registro Bibliográfico
+% Faça as modificações nos campos que estão indicados com ??
+% -------------------------------
+\section*{}
+\vspace*{80pt}
+\begin{center}
+\begin{tcolorbox}[
+    enhanced, % Permite a personalização avançada
+    sharp corners, % Torna os cantos afiados
+    width=1.0\textwidth, % Largura da caixa
+    colback=white, % Cor de fundo
+    colframe=black, % Cor da primeira borda
+    boxrule=3pt, % Largura da primeira borda
+    boxsep=20pt, % Espaçamento entre o texto e as bordas
+    frame style={draw=black, double distance=4pt, double, ultra thick}, % Estilo da segunda borda
+    ]
+    ?Sobrenome?, ?Nome?. 
+    \hspace{1cm} Título : \titulo / ?author?. -- Brasília, 2026. 
+    \hspace{1cm} \pageref{LastPage} f. \\[2mm]
+   	Orientador: ?orientador?. 
+    \hspace{1cm}Trabalho de Conclusão de Curso (Graduação -- Sistema de Informações) -- Centro Universitário do Distrito Federal -- UDF. Coordenação do Curso de Sistema de Informações, Brasília, DF, 2026. \\[2mm]
+   	1. ?Assunto?. 2. ?Assunto?. 3. ?Assunto?. I. ?Título?. \\[2mm]
+   	\begin{flushright}
+    CDU: ?consultar na biblioteca?
+    \end{flushright}
+\end{tcolorbox}
+\end{center}
+
+
+% -------------------------------
+% Assinaturas
+% Faça as modificações nos campos que estão indicados com ??
+% -------------------------------
+\newpage
+\section*{}
+
+\vspace*{10pt}
+\begin{center}
+?Titulo?
+\vspace*{60pt}
+\begin{adjustwidth}{6cm}{-1cm}
+Trabalho de conclusão de curso apresentado à ?Coordenação?, do Centro Universitário do Distrito Federal -- UDF, como requisito parcial para obtenção do grau de bacharel / tecnólogo em ?Curso?. \\[2mm]
+
+Orientador: ?orientador?. 
+\end{adjustwidth}
+\vspace*{40pt}
+Brasília, \underline{\hspace{2cm}} de \underline{\hspace{4cm}} de 2026.
+
+\vspace*{60pt}
+\begin{tabular}{p{7cm}}
+    \hline
+    \centering NOME DO EXAMINADOR \\
+    \centering Titulação \\
+    \centering Instituição a qual é filiado
+\end{tabular}
+
+\vspace*{30pt}
+\begin{tabular}{p{7cm}}
+    \hline
+    \centering NOME DO EXAMINADOR \\
+    \centering Titulação \\
+    \centering Instituição a qual é filiado
+\end{tabular}
+
+\vspace*{30pt}
+\begin{tabular}{p{7cm}}
+    \hline
+    \centering NOME DO EXAMINADOR \\
+    \centering Titulação \\
+    \centering Instituição a qual é filiado
+\end{tabular}
+\end{center}
+
+\vspace*{40pt}
+Nota: \underline{\hspace{2cm}}
+
+
+% -------------------------------
+% Dedicatórias
+% -------------------------------
+\newpage
+\begin{dedicatoria2}{}
+ Dedico este trabalho à minha família, pelo apoio, incentivo e compreensão durante toda a minha trajetória acadêmica.
+ \end{dedicatoria2}
+
+% -------------------------------
+% Agradecimentos
+% -------------------------------
+\newpage
+\begin{agradecimento}{Agradecimentos}
+Agradeço, primeiramente, a Deus, por mais uma conquista; ao meu orientador, pela dedicação e correções; e aos bibliotecários pelo suporte em todas as pesquisas.
+
+\end{agradecimento}
+
+
+% -------------------------------
+% Frase motivacional
+% -------------------------------
+\newpage
+\begin{adjustwidth}{7cm}{0cm}
+\vspace*{\fill}
+\begin{flushright}
+"A educação é a arma mais poderosa que você pode usar para mudar o mundo." \\
+\vspace*{10pt}
+Nelson Mandela
+\end{flushright}
+\end{adjustwidth}
+
+
+% -------------------------------
+% Resumo
+% -------------------------------
+\newpage
+\begin{resumo2}
+Este trabalho investiga a relação existente entre diferentes formas de representação computacional, considerando linguagens de programação textuais, fluxogramas, sistemas baseados em nós (blueprints) e plataformas Low-Code e No-Code. A pesquisa parte da hipótese de que essas representações, apesar de apresentarem características visuais e sintáticas distintas, compartilham uma mesma estrutura lógica subjacente. Por meio de revisão bibliográfica e análise conceitual, discute-se o papel da abstração na computação e a possibilidade de separar a lógica computacional de sua forma de representação. Como resultado, é proposto um modelo conceitual no qual uma estrutura lógica intermediária atua como elemento de integração entre diferentes representações computacionais, permitindo compreender como um mesmo algoritmo pode ser expresso por mecanismos distintos sem alteração de seu comportamento fundamental. A proposta busca contribuir para discussões relacionadas à interoperabilidade entre ambientes de desenvolvimento e à tradução entre representações computacionais.
+
+\vspace*{20pt}
+\textbf{Palavras-chave:}lógica computacional; programação visual; blueprints; low-code; representação computacional.
+\end{resumo2}
+
+
+% -------------------------------
+% Abstract - Resumo traduzido para o Inglês
+% -------------------------------
+\newpage
+\begin{abstract}
+This research investigates the relationship between different forms of computational representation, including textual programming languages, flowcharts, node-based systems (blueprints), and Low-Code and No-Code platforms. The study is based on the hypothesis that, despite their visual and syntactic differences, these representations share a common underlying logical structure. Through a literature review and conceptual analysis, the research discusses the role of abstraction in computing and the possibility of separating computational logic from its representation form. As a result, a conceptual model is proposed in which an intermediate logical structure acts as an integration element between different computational representations, enabling the understanding of how the same algorithm can be expressed through distinct mechanisms without changing its fundamental behavior. The proposal aims to contribute to discussions related to interoperability between development environments and the translation between computational representations.
+
+\vspace*{20pt}
+\textbf{Keywords:} computational logic; visual programming; blueprints; low-code; computational representation.
+\end{abstract}
+
+
+% -------------------------------
+% Lista de Figuras
+% -------------------------------
+\newpage
+\listoffigures*
+
+% -------------------------------
+% Lista de Tabelas
+% -------------------------------
+
+% -------------------------------
+% Lista de Abreviaturas e Siglas
+% -------------------------------
+% No documento use: Isso é um \ac{ex}.
+% --------------------------------
+\chapter*{Siglas}
+\begin{acronym}
+\acro{IA}{Inteligência Artificial}
+\acro{UML}{Unified Modeling Language}
+
+\end{acronym}
+
+\clearpage
+
+
+% -------------------------------
+% Sumario
+% -------------------------------
+\tableofcontents*
+%\cleardoublepage
+
+ 
+% -------------------------------
+% INICIO DO TRABALHO - CAPÍTULOS
+% -------------------------------
+\textual 
+\chapter{Introdução}
+\input{capitulos/cap1_introducao}
+
+\chapter{Desenvolvimento}
+\input{capitulos/cap2_logica}
+\input{capitulos/cap2_programacao_visual}
+
+\chapter{Proposta Conceitual da Pesquisa}
+\input{capitulos/proposta}
+
+\chapter{Considerações Finais}
+\input{capitulos/consideracoes_finais}
+    
+
+% --------------------------------------
+% REFERÊNCIAS
+% --------------------------------------
+% Colocar SUAS referências no arquivo TCC.bib
+% Pode ser criada com o BibDesk - https://bibdesk.sourceforge.io/
+% Ou manualmente seguindo o arquivo que deixei como modelo
+% --------------------------------------
+\bibliography{TCC}
+
+\end{document}

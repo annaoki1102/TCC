@@ -1,0 +1,31 @@
+# Arquivos gerados na compilação do LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bcf
+*.run.xml
+*.idx
+*.ilg
+*.ind
+*.brf
+
+# Pastas de saída de compilação
+build/
+out/
+
+# PDFs NÃO são ignorados: TCC.pdf fica versionado
+
+# Arquivos temporários do sistema
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
