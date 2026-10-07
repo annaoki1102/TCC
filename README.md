@@ -1,6 +1,6 @@
-# Lógica computacional como estrutura intermediária para tradução entre representações
+# Entre o Visual e o Textual: uma proposta baseada em Inteligência Artificial para a transformação de representações da lógica computacional
 
-Trabalho de Conclusão de Curso (TCC) de Ciência da Computação.
+Trabalho de Conclusão de Curso (TCC) de Sistemas de Informação.
 
 **Autora:** Anna Beatriz Resende Oki Corrêa
 
