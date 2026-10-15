@@ -1,30 +1,31 @@
-# Protótipo para converter fórmulas de planilha com condicionais aninhadas em Python
-
-Trabalho de Conclusão de Curso (TCC) de Sistemas de Informação.
+# Protótipo para converter fórmulas de planilha com condicionais aninhadas em Python (TCC de Sistemas de Informação, UDF)
 
 **Autora:** Anna Beatriz Resende Oki Corrêa
 
-Texto escrito em LaTeX, com a classe [abntex2](https://www.abntex.net.br/).
+## Resumo
 
-> **Atenção:** este repositório é **privado** e deve continuar assim até o TCC ser defendido.
+Fórmulas de planilha com várias funções `SE` aninhadas escondem a lógica da regra, e é fácil esquecer uma condição ao passá-la para outro formato. Este trabalho propõe um protótipo que lê a fórmula, organiza a lógica em uma árvore de condições e, a partir dela, gera o código Python e um fluxograma. A avaliação usa casos de teste que comparam o resultado da fórmula com o do código gerado e reúne a opinião de um profissional sobre a utilidade do fluxograma.
 
-## Versão atual
+## Situação atual
 
-A versão atual do TCC é o arquivo `TCC.tex`, com os capítulos em `capitulos/`.
+O texto do TCC está em andamento. O protótipo ainda não foi desenvolvido.
 
-Tema atual: **"Protótipo para converter fórmulas de planilha com condicionais aninhadas em Python"**.
+## Onde está cada coisa
 
-## Estrutura de pastas
-
-| Item | Descrição |
-|------|-----------|
-| `TCC.tex` | Arquivo principal: preâmbulo e inclusão dos capítulos. |
+| Arquivo ou pasta | O que tem |
+|------------------|-----------|
+| `TCC.tex` | Versão atual do TCC: arquivo principal, que junta todos os capítulos. |
+| `capitulos/cap1_introducao.tex` | Introdução: problema, objetivos e metodologia. |
+| `capitulos/cap2_*.tex` | Fundamentação teórica. |
+| `capitulos/proposta.tex` | Proposta do protótipo e plano de avaliação. |
+| `capitulos/consideracoes_finais.tex` | Considerações finais. |
 | `TCC.bib` | Referências bibliográficas (BibTeX). |
-| `capitulos/` | Um arquivo `.tex` por capítulo do trabalho. |
-| `images/` | Figuras e imagens usadas no texto. |
+| `images/` | Figuras usadas no texto. |
 | `sty/` | Pacotes e estilos (`.sty`) auxiliares. |
 
 ## Como compilar
+
+O texto é escrito em LaTeX, com a classe [abntex2](https://www.abntex.net.br/).
 
 **Pré-requisitos:** uma distribuição LaTeX (MiKTeX ou TeX Live), Perl e `latexmk`.
 
@@ -47,3 +48,7 @@ O PDF gerado é `TCC.pdf`, que fica versionado. Os demais arquivos de compilaç�
    git commit -m "descrição do que mudou"
    git push
    ```
+
+## Aviso
+
+Este repositório é **privado** e deve continuar assim até a defesa do TCC.
