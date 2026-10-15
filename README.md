@@ -1,4 +1,4 @@
-# Entre o Visual e o Textual: uma proposta baseada em Inteligência Artificial para a transformação de representações da lógica computacional
+# Protótipo para converter fórmulas de planilha com condicionais aninhadas em Python
 
 Trabalho de Conclusão de Curso (TCC) de Sistemas de Informação.
 
@@ -7,6 +7,12 @@ Trabalho de Conclusão de Curso (TCC) de Sistemas de Informação.
 Texto escrito em LaTeX, com a classe [abntex2](https://www.abntex.net.br/).
 
 > **Atenção:** este repositório é **privado** e deve continuar assim até o TCC ser defendido.
+
+## Versão atual
+
+A versão atual do TCC é o arquivo `TCC.tex`, com os capítulos em `capitulos/`.
+
+Tema atual: **"Protótipo para converter fórmulas de planilha com condicionais aninhadas em Python"**.
 
 ## Estrutura de pastas
 

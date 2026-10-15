@@ -23,7 +23,7 @@
 %--------------------------------------------
 % Variáveis para preencher com os seus dados
 %--------------------------------------------
-    \title{Entre o Visual e o Textual: uma proposta baseada em Inteligência Artificial para a transformação de representações da lógica computacional}
+    \title{Protótipo para converter fórmulas de planilha com condicionais aninhadas em Python}
     \subtitle{}
     \author{Anna Beatriz Resende Oki Corrêa}
     \cidade{Brasília}
@@ -156,10 +156,10 @@ Nelson Mandela
 % -------------------------------
 \newpage
 \begin{resumo2}
-Este trabalho estuda a relação entre diferentes formas de representar a lógica computacional: linguagens de programação textuais, fluxogramas, sistemas baseados em nós (\textit{blueprints}) e plataformas \textit{Low-Code} e \textit{No-Code}. A pesquisa levanta a hipótese de que essas representações, apesar de diferentes na aparência e na sintaxe, podem ter em comum uma mesma estrutura lógica. Por meio de revisão bibliográfica e análise conceitual, discute-se o papel da abstração na computação e como uma mesma lógica pode ser expressa de formas diferentes. Como resultado, propõe-se um modelo conceitual em que uma representação lógica intermediária, com a Inteligência Artificial como apoio, poderia ajudar a transformar uma representação em outra, buscando preservar o comportamento da lógica original. Por ser uma pesquisa conceitual, a hipótese é discutida com base na literatura e o modelo não foi testado na prática, o que fica como sugestão para trabalhos futuros. A proposta busca contribuir para a discussão sobre a comunicação entre ambientes de desenvolvimento e a tradução entre representações computacionais.
+Profissionais de tecnologia precisam, com frequência, passar uma mesma regra de uma representação para outra, como de uma fórmula de planilha para um código. Quando a fórmula tem condições aninhadas, a lógica fica escondida e é fácil esquecer uma condição. Este trabalho propõe um protótipo que converte fórmulas de planilha com condições aninhadas em código Python e mostra a lógica em forma de fluxograma. A lógica da fórmula é organizada em uma árvore de condições, da qual saem o código e o fluxograma. A avaliação compara o resultado da fórmula com o do código em casos de teste e reúne a opinião de um profissional sobre a utilidade do fluxograma. O trabalho está em andamento: o problema, a proposta e o plano de avaliação estão definidos, e o desenvolvimento do protótipo será a próxima etapa.
 
 \vspace*{20pt}
-\textbf{Palavras-chave:} lógica computacional; programação visual; blueprints; low-code; inteligência artificial.
+\textbf{Palavras-chave:} lógica computacional; fórmulas de planilha; conversão de código; fluxograma; Python.
 \end{resumo2}
 
 
@@ -168,10 +168,10 @@ Este trabalho estuda a relação entre diferentes formas de representar a lógic
 % -------------------------------
 \newpage
 \begin{abstract}
-This work studies the relationship between different ways of representing computational logic: textual programming languages, flowcharts, node-based systems (\textit{blueprints}), and Low-Code and No-Code platforms. The research raises the hypothesis that these representations, although different in appearance and syntax, may share the same logical structure. Through a literature review and conceptual analysis, it discusses the role of abstraction in computing and how the same logic can be expressed in different ways. As a result, it proposes a conceptual model in which an intermediate logical representation, with Artificial Intelligence as support, could help transform one representation into another while seeking to preserve the behavior of the original logic. Since this is conceptual research, the hypothesis is discussed based on the literature and the model was not tested in practice, which is left as a suggestion for future work. The proposal aims to contribute to the discussion about communication between development environments and the translation between computational representations.
+Technology professionals often need to move the same rule from one representation to another, such as from a spreadsheet formula to code. When a formula has nested conditions, the logic is hidden and it is easy to miss a condition. This work proposes a prototype that converts spreadsheet formulas with nested conditions into Python code and shows the logic as a flowchart. The formula's logic is organized as a tree of conditions, from which the code and the flowchart are generated. The evaluation compares the formula's result with the code's result on test cases and collects a professional's opinion on the usefulness of the flowchart. The work is in progress: the problem, the proposal and the evaluation plan are defined, and the prototype development is the next step.
 
 \vspace*{20pt}
-\textbf{Keywords:} computational logic; visual programming; blueprints; low-code; artificial intelligence.
+\textbf{Keywords:} computational logic; spreadsheet formulas; code conversion; flowchart; Python.
 \end{abstract}
 
 
@@ -192,8 +192,6 @@ This work studies the relationship between different ways of representing comput
 % --------------------------------
 \chapter*{Siglas}
 \begin{acronym}
-\acro{IA}{Inteligência Artificial}
-\acro{UML}{Unified Modeling Language}
 
 \end{acronym}
 

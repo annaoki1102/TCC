@@ -29,3 +29,6 @@ Thumbs.db
 
 # Editor
 .vscode/
+
+# Arquivos de trabalho (versões novas antes de aplicar)
+novos/
