@@ -1,4 +1,4 @@
-# Protótipo para converter fórmulas de planilha com condicionais aninhadas em Python (TCC de Sistemas de Informação, UDF)
+# Protótipo para atualizar sistemas legados por meio de agentes de IA em desenvolvimento (TCC de Sistemas de Informação, UDF)
 
 **Autora:** Anna Beatriz Resende Oki Corrêa
 
